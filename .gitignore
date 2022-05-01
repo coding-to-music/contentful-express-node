@@ -42,3 +42,4 @@ jspm_packages
 # vim stuff
 *.swp
 *.swo
+.vercel
