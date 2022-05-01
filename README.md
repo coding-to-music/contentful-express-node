@@ -17,17 +17,8 @@ https://www.contentful.com/developers/docs/javascript/tutorials/create-expressjs
 ## Environment Values
 
 ```java
-sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-
-if (secret !== process.env.CONTENTFUL_PREVIEW_SECRET || !slug) {
-accessToken: process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN,
-
 accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 space: process.env.CONTENTFUL_SPACE_ID,
-host: 'preview.contentful.com',
-
-username = process.env.GITHUB_USERNAME,
-authorization: process.env.GITHUB_ACCESS_TOKEN,
 ```
 
 This guide will walk you through your first steps using Contentful within an Express Node js application. It will provide a step-by-step guide on how to get your first entries and start using the content you create on Contentful.
