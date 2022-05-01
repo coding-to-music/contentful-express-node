@@ -1,3 +1,35 @@
+# contentful_express_node
+
+# 🚀 Javascript full-stack 🚀
+
+### React / omdbapi.com API
+
+https://github.com/coding-to-music/contentful_express_node
+
+https://contentful_express_node.vercel.app
+
+https://contentful_express_node.herokuapp.com
+
+by Contentful
+
+https://www.contentful.com/developers/docs/javascript/tutorials/create-expressjs-app-using-contentful/
+
+## Environment Values
+
+```java
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+
+if (secret !== process.env.CONTENTFUL_PREVIEW_SECRET || !slug) {
+accessToken: process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN,
+
+accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+space: process.env.CONTENTFUL_SPACE_ID,
+host: 'preview.contentful.com',
+
+username = process.env.GITHUB_USERNAME,
+authorization: process.env.GITHUB_ACCESS_TOKEN,
+```
+
 This guide will walk you through your first steps using Contentful within an Express Node js application. It will provide a step-by-step guide on how to get your first entries and start using the content you create on Contentful.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
@@ -6,7 +38,7 @@ This guide will walk you through your first steps using Contentful within an Exp
 
 - A [Heroku][1] account
 - [Heroku CLI][14] installed
-- [Node.js] [2] 6.2.1 installed 
+- [Node.js] [2] 6.2.1 installed
 - Npm 3.10.7 which should be installed with Nodejs
 - [Git][12] installed
 - Basic Command Line Interface knowledge
@@ -19,27 +51,27 @@ Run the following commands to get started.
 
 - Clone the example repository:
 
-~~~bash
+```bash
 git clone https://github.com/contentful/contentful_express_tutorial.git
-~~~
+```
 
 - Navigate into the repository's directory:
 
-~~~bash
-$ cd contentful_express_tutorial
-~~~
+```bash
+cd contentful_express_tutorial
+```
 
 - Install dependencies:
 
-~~~bash
-$ npm install
-~~~
+```bash
+npm install
+```
 
 - Run the server:
 
-~~~bash
-$ npm run dev
-~~~
+```bash
+npm run dev
+```
 
 Everything is now set up. You can view your new data by opening [_http://localhost:3000/_][4] in your browser.
 
@@ -58,15 +90,14 @@ You can create your own custom data by following these steps:
 ![Keys Page](keys_and_ids.png)
 
 - Change the product content type by your own, [here](https://github.com/contentful/contentful_express_tutorial/blob/master/services/products.js).
-e.g. replacing `2PqfXUJwE8qSYKuM0U6w8M` with `product`
+  e.g. replacing `2PqfXUJwE8qSYKuM0U6w8M` with `product`
 - Change the category content type by your own, [here](https://github.com/contentful/contentful_express_tutorial/blob/master/services/categories.js).
-e.g. replacing `6XwpTaSiiI2Ak2Ww0oi6qa` with `category`
+  e.g. replacing `6XwpTaSiiI2Ak2Ww0oi6qa` with `category`
 
 - In the Express js application:
   - navigate to the package.json file open it and change the values `accessToken` and `space` in the `config` section and save.
   - run `npm run dev` to start the server
   - Your space will be now displayed in your application
-
 
 Next in the _[Contentful web app][6] > Content_:
 
@@ -84,34 +115,34 @@ To view the demo application live in your own production environment, follow the
 
 - Having Heroku CLI Installed, Login to Heroku if you're not logged in already:
 
-~~~bash
+```bash
 heroku login
-~~~
+```
 
 - Create a new instance:
 
-~~~bash
+```bash
 heroku create
-~~~
+```
 
 - Commit your change:
 
-~~~bash
+```bash
 git add .
 git commit -m "Add Website"
-~~~
+```
 
 - Deploy to Heroku:
 
-~~~bash
+```bash
 git push heroku master
-~~~
+```
 
 - Open the application in your browser:
 
-~~~bash
+```bash
 heroku open
-~~~
+```
 
 ## Next Steps
 
@@ -119,7 +150,7 @@ After this guide, you should be able to start using Contentful with your Express
 
 You can read about the Contentful CDA library in more detail on our [contentful.js GitHub][1] or our [Getting Started with CDA SDK tutorial][9]. We also suggest taking a look at our [Product Example Application][10].
 
-Do you like building static sites? Check how to build static sites using Contentful with [Metalsmith][11] 
+Do you like building static sites? Check how to build static sites using Contentful with [Metalsmith][11]
 
 [1]: https://heroku.com
 [2]: https://nodejs.org
@@ -134,3 +165,39 @@ Do you like building static sites? Check how to build static sites using Content
 [11]: https://github.com/contentful-labs/contentful-metalsmith-example
 [12]: https://git-scm.com/downloads
 [14]: https://devcenter.heroku.com/articles/heroku-command-line#download-and-install
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/contentful_express_node.git
+git push -u origin main
+```
+
+## Heroku
+
+```java
+heroku create contentful_express_node
+```
+
+## Heroku MongoDB Environment Variables
+
+```java
+heroku config:set
+
+heroku config:set MONGODB_URI="your value"
+```
+
+## Push to Heroku
+
+```java
+git push heroku
+
+# or
+
+npm run deploy
+```

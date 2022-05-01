@@ -1,10 +1,18 @@
-var contentful = require('contentful')
-var config = require('../package.json').config || {}
+var contentful = require("contentful");
+require("dotenv").config();
 
 var client = contentful.createClient({
-  accessToken: config.accessToken,
-  space: config.space
-})
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  space: process.env.CONTENTFUL_SPACE_ID,
+});
 
-exports.client = client
+exports.client = client;
 
+// console.log(process.env.CONTENTFUL_ACCESS_TOKEN);
+// console.log(process.env.CONTENTFUL_SPACE_ID);
+
+// console.log(client);
+
+// var config = require('../package.json').config || {}
+// accessToken: config.accessToken,
+// space: config.space
