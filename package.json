@@ -1,5 +1,5 @@
 {
-  "name": "contentful_express_node",
+  "name": "contentful-express-node",
   "version": "0.0.0",
   "private": true,
   "engines": {

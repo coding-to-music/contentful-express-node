@@ -1,14 +1,14 @@
-# contentful_express_node
+# contentful-express-node
 
 # 🚀 Javascript full-stack 🚀
 
 ### React / omdbapi.com API
 
-https://github.com/coding-to-music/contentful_express_node
+https://github.com/coding-to-music/contentful-express-node
 
-https://contentful_express_node.vercel.app
+https://contentful-express-node.vercel.app
 
-https://contentful_express_node.herokuapp.com
+https://contentful-express-node.herokuapp.com
 
 by Contentful
 
@@ -174,14 +174,14 @@ git add .
 git remote remove origin
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:coding-to-music/contentful_express_node.git
+git remote add origin git@github.com:coding-to-music/contentful-express-node.git
 git push -u origin main
 ```
 
 ## Heroku
 
 ```java
-heroku create contentful_express_node
+heroku create contentful-express-node
 ```
 
 ## Heroku MongoDB Environment Variables
